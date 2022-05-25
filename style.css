@@ -1,0 +1,151 @@
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+
+#navbar-container {
+  display: grid;
+  background-color: rgba(52, 52, 49, 255);
+  grid-template-columns: 1fr 200px 1fr 50px 120px 90px 90px 75px 75px 75px 150px;
+  grid-template-rows: 60px;
+  grid-template-areas: ". logo-container . blog resources examples features pricing login sign-up";
+}
+
+#logo-container {
+  grid-area: logo-container;
+  margin: 0;
+  background-color: white;
+  justify-self: center;
+  align-self: center;
+}
+
+#blog {
+  grid-area: blog;
+  justify-self: center;
+  align-self: center;
+}
+
+#resources {
+  grid-area: resources;
+  justify-self: center;
+  align-self: center;
+}
+
+#examples {
+  grid-area: examples;
+  justify-self: center;
+  align-self: center;
+}
+
+#features {
+  grid-area: features;
+  justify-self: center;
+  align-self: center;
+}
+
+#pricing {
+  grid-area: pricing;
+  justify-self: center;
+  align-self: center;
+}
+
+#login {
+  grid-area: login;
+  justify-self: center;
+  align-self: center;
+}
+
+#sign-up {
+  grid-area: sign-up;
+  justify-self: center;
+  align-self: center;
+  background-color: #4683ea;
+  height: 30px;
+  width: 60px;
+  color: white;
+  border-radius: 3px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 30px;
+  font-size: small;
+}
+
+#hero-container {
+  display: grid;
+  grid-template-rows: 20px;
+}
+
+#header-text {
+  justify-self: center;
+  align-self: start;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  font-size: xx-large;
+}
+
+#subtext {
+  justify-self: center;
+  align-self: start;
+  font-family: "open sans", arial, sans-serif;
+  color: white;
+  font-size: large;
+  font-style: normal;
+}
+
+h3 {
+  font-weight: 100;
+  justify-self: center;
+  font-family: "open sans", arial, sans-serif;
+}
+
+#background-image {
+  height: 100px;
+  width: 100%;
+}
+
+#container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 80px 100px 1fr;
+  grid-template-areas:
+    ". . . ."
+    "simplicity save-time make-more-money built-by-artists"
+    ". . . .";
+}
+
+#simplicity {
+  grid-area: simplicity;
+  display: grid;
+  grid-template-rows: 200px 1fr;
+  justify-content: center;
+}
+
+#save-time {
+  grid-area: save-time;
+  display: grid;
+  grid-template-rows: 200px 1fr;
+  justify-content: center;
+}
+
+#make-more-money {
+  grid-area: make-more-money;
+  display: grid;
+  grid-template-rows: 200px 1fr;
+  justify-content: center;
+}
+
+#built-by-artists {
+  grid-area: built-by-artists;
+  display: grid;
+  grid-template-rows: 200px 1fr;
+  justify-content: center;
+}
